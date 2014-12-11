@@ -1,0 +1,15 @@
+<ul>
+  {{#each components}}
+    <li><a href="#!{{.}}">{{.}}</a>
+  {{/each}}
+</ul>
+<div class="demo-area">
+  {{#each components}}
+    {{#equal this self.current}}
+    <!--
+      <iframe src="http://rawgit.com/{{.}}/master/demo.html"></iframe>
+      -->
+      <iframe src="http://rawgit.com/{{.}}/master/demo.html"></iframe>
+    {{/equal}}
+  {{/each}}
+</div>
