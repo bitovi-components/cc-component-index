@@ -1,0 +1,25 @@
+{
+  "name": "cc-hello-world",
+  "main": "cc-hello-world.js",
+  "version": "0.0.0",
+  "authors": [
+    "Kat Marchán <kzm@sykosomatic.org>"
+  ],
+  "description": "Hello world can.Component example",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "webcomponents",
+    "canjs",
+    "can.component",
+    "common-component"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "canjs": "gthrive/canjs#gthrive",
+    "steal": "bitovi/steal#minor",
+    "jquery": "~2.1.1",
+    "mocha": "~2.0.1"
+  }
+}
