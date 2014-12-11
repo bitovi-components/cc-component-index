@@ -1,39 +1,51 @@
-# <common-components>
+# <cc-component-index>
 
 This project tracks an index of components and renders their demo.html
 pages in iframes.
 
 ## Installation
 
-`bower install --save bitovi/common-components`
+`bower install --save bitovi/cc-component-index`
 
 ## Usage
 
 In your javascript:
 
 ```js
-import "bower_components/common-components";
-
-var componentRepos = ["bitovi/cc-hello-world"];
+import "bower_components/cc-component-index/cc-component-index";
 ```
 
 In your template:
 
 ```html
-<common-components components="bitovi/cc-hello-world,bitovi/can-router,bitovi/can-router-route"></common-components>
+<cc-component-index components="bitovi-components/cc-hello-world
+	                            bitovi-components/cc-component-index">
+</cc-component-index>
 ```
 
 ## API
 
 ### Attributes
 
-* `{String|Array<String>} components` - Array of github repository names in bower format.
+#### `{String|Array<ComponentDef>} components`
+
+This string or array will define which components appear in the component
+list. Components can be anywhere web-accessible and have two syntaxes they can
+be provided in:
+
+* `username/repo` will automatically generate a component entry, looking for a
+`demo.html` page in the root of a repository. This version uses
+[rawgit](http://rawgit.com) as a CDN.
+
+* `{displayName: String, docs: StringURL, demo: StringURL, test: StringURL}`
+will use `displayName` for the name and ID in the component listing. `docs`,
+`demo`, and `test` should be CDN URLs to hosted versions of the rendered
+documentation, `demo.html`, and `test.html` pages that can be loaded up in an
+iframe.
 
 ### Methods
 
-
 ### Events
-
 
 ### Content
 
@@ -41,7 +53,7 @@ In your template:
 
 * `npm install`
 * `grunt serve [--port PORT=8125]`
-* Go to [demo page](http://localhost:8125)
+* Go to [demo page](http://localhost:8125/demo.html)
 
 ## Testing
 

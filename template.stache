@@ -1,15 +1,13 @@
 <ul>
   {{#each components}}
-    <li><a href="#!{{.}}">{{.}}</a>
+    <li><a can-click="{self.attr 'current' displayName}">{{displayName}}</a></li>
   {{/each}}
 </ul>
-<div class="demo-area">
+<div class="component-display-area">
   {{#each components}}
-    {{#equal this self.current}}
-    <!--
-      <iframe src="http://rawgit.com/{{.}}/master/demo.html"></iframe>
-      -->
-      <iframe src="http://rawgit.com/{{.}}/master/demo.html"></iframe>
+    {{#equal displayName self.current}}
+      <iframe class="demo" src="{{demo}}"></iframe>
+      <a href="{{docs}}">Documentation</a>
     {{/equal}}
   {{/each}}
 </div>

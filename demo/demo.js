@@ -2,6 +2,6 @@
 import autoload from "util/autoloader";
 
 // Components
-import "cc-hello-world";
+import "cc-component-index";
 
 autoload();

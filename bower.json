@@ -1,6 +1,6 @@
 {
-  "name": "cc-hello-world",
-  "main": "cc-hello-world.js",
+  "name": "cc-component-index",
+  "main": "cc-component-index.js",
   "version": "0.0.0",
   "authors": [
     "Kat Marchán <kzm@sykosomatic.org>"
@@ -20,6 +20,7 @@
     "canjs": "gthrive/canjs#gthrive",
     "steal": "bitovi/steal#minor",
     "jquery": "~2.1.1",
-    "mocha": "~2.0.1"
+    "mocha": "~2.0.1",
+    "component-utils": "bitovi-components/component-utils"
   }
 }

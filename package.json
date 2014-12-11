@@ -1,8 +1,8 @@
 {
-  "name": "cc-hello-world",
+  "name": "cc-component-index",
   "version": "0.0.0",
   "description": "Hello World can.Component example",
-  "main": "cc-hello-world.js",
+  "main": "cc-component-index.js",
   "scripts": {
     "test": "npm test"
   },
@@ -16,6 +16,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
     "load-grunt-tasks": "^1.0.0",
     "steal-tools": "git://github.com/bitovi/steal-tools.git#minor",
     "testee": "^0.1.7"
